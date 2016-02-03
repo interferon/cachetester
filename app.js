@@ -4,10 +4,10 @@ var app = express();
 app.use(express.static('public'));
 
 app.get('/', function (req, res) {
-  res.sendFile('./index.html');
+  res.send('Hello World!');
 });
 
-app.listen(process.env.PORT || 5000, function () {
+app.listen(process.env.PORT, function () {
   console.log('Example app listening on port 3000!');
 });
 
