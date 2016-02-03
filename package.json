@@ -1,12 +1,16 @@
 {
-	"name": "cachedtester",
-	"description": "a really cool app",
-	"version": "1.0.0",
-	"engines": {
-	"node": "4.1.1",
-	"npm": "2.1.x"
-	},
-	"scripts": {
-	"start": "node server_script.js",
-	}
+  "name": "cachedtester",
+  "version": "0.0.0",
+  "description": "test",
+  "main": "app.js",
+  "dependencies": {
+    "express": "~4.x"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Victor Yaremko",
+  "license": "BSD",
+  "gitHead": "3813e33092fb17664a028284716fae2efd2f208e"
 }
