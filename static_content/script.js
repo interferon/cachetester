@@ -1,3 +1,4 @@
+// **************************
 var xmlhttp = new XMLHttpRequest(),
     method = 'GET',
     url = 'phones';
