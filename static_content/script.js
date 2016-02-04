@@ -1,6 +1,6 @@
 var xmlhttp = new XMLHttpRequest(),
     method = 'GET',
-    url = 'phone.json';
+    url = '/static_content/phone.json';
 
 xmlhttp.open(method, url, true);
 xmlhttp.onreadystatechange = function () {
