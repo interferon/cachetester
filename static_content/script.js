@@ -1,15 +1,21 @@
 var xmlhttp = new XMLHttpRequest(),
     method = 'GET',
-    url = '/static_content/phone.json';
+    url = 'phones';
 
-xmlhttp.open(method, url, true);
+
 xmlhttp.onreadystatechange = function () {
-    if (xmlhttp.readyState !== XMLHttpRequest.DONE) {
-        return;
-    }
-    if (xmlhttp.status !== 200) {
-        return;
-    }
-    console.log(xmlhttp.responseText);
+    if (this.readyState == 4) {
+		if(this.status == 200) {
+			console.log(xmlhttp.responseText);
+		}
+	}
+	else{
+		return;
+	}
 };
-xmlhttp.send();
+
+
+document.getElementById("sendreq").addEventListener('click', function(){
+	xmlhttp.open(method, url, true);
+	xmlhttp.send();
+})

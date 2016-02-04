@@ -7,8 +7,8 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
 });
 
-app.get('/phones.json', function (req, res) {
-  res.sendFile(__dirname + '/phones.json');
+app.get('/phones', function (req, res) {
+  res.sendFile(__dirname + '/static_content/phones.json');
 });
 
 app.listen(process.env.PORT || 3000, function () {
