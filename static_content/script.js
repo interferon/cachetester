@@ -19,17 +19,26 @@ xmlhttp.onreadystatechange = function () {
 };
 
 
-document.getElementById("sendreq1").addEventListener('click', function(){
-	xmlhttp.open(method, url1, true);
-	xmlhttp.send();
-});
+document.getElementById("sendreq1").addEventListener(
+	'click',
+	function(){
+		xmlhttp.open(method, url1, true);
+		xmlhttp.send();
+	}
+);
 
-document.getElementById("sendreq2").addEventListener('click', function(){
-	xmlhttp.open(method, url2, true);
-	xmlhttp.send();
-});
+document.getElementById("sendreq2").addEventListener(
+	'click',
+	function(){
+		xmlhttp.open(method, url2, true);
+		xmlhttp.send();
+	}
+);
 
-document.getElementById("sendreq3").addEventListener('click', function(){
-	xmlhttp.open("POST", url3, true);
-	xmlhttp.send({"model" : "name"});
-});
+document.getElementById("sendreq3").addEventListener(
+	'click',
+	function(){
+		xmlhttp.open("POST", url3, true);
+		xmlhttp.send({"model" : "name"});
+	}
+);
