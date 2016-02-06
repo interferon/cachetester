@@ -1,7 +1,10 @@
 // **************************
 var xmlhttp = new XMLHttpRequest(),
     method = 'GET',
-    url = 'phones';
+    url1 = 'phones',
+    url2 = 'cars',
+    url3 = 'boots';
+
 
 
 xmlhttp.onreadystatechange = function () {
@@ -16,7 +19,17 @@ xmlhttp.onreadystatechange = function () {
 };
 
 
-document.getElementById("sendreq").addEventListener('click', function(){
-	xmlhttp.open(method, url, true);
+document.getElementById("sendreq1").addEventListener('click', function(){
+	xmlhttp.open(method, url1, true);
 	xmlhttp.send();
-})
+});
+
+document.getElementById("sendreq2").addEventListener('click', function(){
+	xmlhttp.open(method, url2, true);
+	xmlhttp.send();
+});
+
+document.getElementById("sendreq3").addEventListener('click', function(){
+	xmlhttp.open(method, url3, true);
+	xmlhttp.send();
+});

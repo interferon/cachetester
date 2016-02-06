@@ -1,0 +1,20 @@
+var xhr = window.XMLHttpRequest;
+
+var storage = [];
+
+window.XMLHttpRequest = function (){
+
+	var myXHR = new xhr();
+
+	for (var attr in xhr){
+		if (toBeCopied(attr)){
+			this.attr = xhr[attr]; 
+		}
+	}
+
+	this.open = function(method, url, async, user, pass){
+		console.log("");
+		myXHR.open(method, url, async, user, pass);
+	};
+	return this;
+};
