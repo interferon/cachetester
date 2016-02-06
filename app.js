@@ -19,6 +19,10 @@ app.get('/boots', function (req, res) {
   res.sendFile(__dirname + '/static_content/boots.json');
 });
 
+app.post('/boots', function (req, res) {
+  res.sendFile(__dirname + '/static_content/boots.json');
+});
+
 app.listen(process.env.PORT || 3000, function () {
   console.log('Example app listening ...');
 });
