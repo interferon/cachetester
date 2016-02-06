@@ -20,7 +20,7 @@ app.get('/boots', function (req, res) {
 });
 
 app.post('/boots', function (req, res) {
-  res.sendFile(__dirname + '/static_content/boots.json');
+  res.json({"salewa" : "climb"});
 });
 
 app.listen(process.env.PORT || 3000, function () {
