@@ -30,6 +30,6 @@ document.getElementById("sendreq2").addEventListener('click', function(){
 });
 
 document.getElementById("sendreq3").addEventListener('click', function(){
-	xmlhttp.open(method, url3, true);
-	xmlhttp.send();
+	xmlhttp.open("POST", url3, true);
+	xmlhttp.send({"model" : "name"});
 });
